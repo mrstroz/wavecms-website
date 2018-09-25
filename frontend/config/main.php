@@ -8,8 +8,29 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'language' => 'en',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        'mrstroz\wavecms\page\FrontendBootstrap',
+        'frontend\Bootstrap'
+    ],
+    'modules' => [
+        'sitemap' => [
+            'class' => 'himiklab\sitemap\Sitemap',
+            'models' => [
+                'mrstroz\wavecms\page\models\Page',
+            ],
+            'urls' => [
+                [
+                    'loc' => ['/'],
+                    'changefreq' => \himiklab\sitemap\behaviors\SitemapBehavior::CHANGEFREQ_DAILY,
+                    'priority' => 1,
+                ]
+            ],
+            'cacheExpire' => 1
+        ]
+    ],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -36,14 +57,39 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'bundles' => [
+//                'yii\web\JqueryAsset' => [
+//                    'js'=>[]
+//                ],
+//                'yii\bootstrap\BootstrapPluginAsset' => [
+//                    'js'=>[]
+//                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [],
+                ],
             ],
         ],
-        */
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/web',
+                'baseUrl' => '@web/themes/web',
+                'pathMap' => [
+                    '@app/views' => '@app/themes/web',
+                ],
+            ],
+        ],
+        'urlManager' => [
+            'class' => 'codemix\localeurls\UrlManager',
+            'languages' => ['en', 'pl'],
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableLanguageDetection' => false,
+            'rules' => [
+                ['pattern' => 'sitemap', 'route' => 'sitemap/default/index', 'suffix' => '.xml'],
+            ],
+        ]
     ],
     'params' => $params,
 ];

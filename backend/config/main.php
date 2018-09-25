@@ -8,13 +8,29 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'language' => 'en',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
         'wavecms' => [
             'class' => 'mrstroz\wavecms\Module',
-            'languages' => ['pl','en']
+            'languages' => ['en', 'pl'],
+            /*
+             * Override classes
+            'classMap' => [
+                'User' => \common\models\User::class
+            ]
+            */
+        ],
+        'wavecms-page' => [
+            'class' => 'mrstroz\wavecms\page\Module',
+            /*
+             * Override classes
+            'classMap' => [
+                'Page' => 'common\models\Page',
+            ]
+            */
         ],
     ],
     'components' => [
@@ -22,7 +38,7 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'mrstroz\wavecms\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
@@ -42,14 +58,36 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/admin',
+                'baseUrl' => '@web/themes/admin',
+                'pathMap' => [
+                    '@wavecms/views' => '@app/themes/admin/wavecms',
+                ],
+            ],
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+    ],
+    'controllerMap' => [
+        'elfinder' => [
+            'class' => 'mihaildev\elfinder\Controller',
+            'access' => ['@'],
+            'disabledCommands' => ['netmount'],
+            'roots' => [
+                [
+                    'baseUrl' => '@frontWeb',
+                    'basePath' => '@frontWebroot',
+                    'path' => 'userfiles',
+                    'name' => 'Files'
+                ]
+            ]
+        ]
     ],
     'params' => $params,
 ];

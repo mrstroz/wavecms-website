@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d04ea074897bdda2438b18d8cc81fece",
+    "content-hash": "1a394cdb3114b6c8233fcf2f5ea68c36",
     "packages": [
         {
             "name": "2amigos/yii2-editable-widget",
@@ -68,6 +68,64 @@
                 "yii2"
             ],
             "time": "2017-07-27T05:58:31+00:00"
+        },
+        {
+            "name": "2amigos/yii2-switch-widget",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-switch-widget.git",
+                "reference": "04a3cf00163080207c00eac165c8526f79030f90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-switch-widget/zipball/04a3cf00163080207c00eac165c8526f79030f90",
+                "reference": "04a3cf00163080207c00eac165c8526f79030f90",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap-switch": "3.3.*",
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\switchinput\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The bootstrap switch widget for the Yii framework",
+            "homepage": "https://github.com/2amigos/yii2-switch-widget",
+            "keywords": [
+                "2amigos",
+                "switch",
+                "widget",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2017-07-05T14:51:41+00:00"
         },
         {
             "name": "2amigos/yii2-translateable-behavior",
@@ -138,6 +196,29 @@
             ]
         },
         {
+            "name": "bower-asset/bootstrap-switch",
+            "version": "v3.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bttstrp/bootstrap-switch.git",
+                "reference": "e1a9a9c135ed062ac362d2f8345a71417fb10758"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bttstrp/bootstrap-switch/zipball/e1a9a9c135ed062ac362d2f8345a71417fb10758",
+                "reference": "e1a9a9c135ed062ac362d2f8345a71417fb10758",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/bootstrap": ">=2.3.2",
+                "bower-asset/jquery": ">=1.9.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "Apache-2.0"
+            ]
+        },
+        {
             "name": "bower-asset/inputmask",
             "version": "3.3.11",
             "source": {
@@ -172,6 +253,29 @@
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
                 "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-slugify",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madflow/jquery-slugify.git",
+                "reference": "30f6bb0c4ad1181fe81dd2c1447d1e0403f52d8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madflow/jquery-slugify/zipball/30f6bb0c4ad1181fe81dd2c1447d1e0403f52d8d",
+                "reference": "30f6bb0c4ad1181fe81dd2c1447d1e0403f52d8d",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7",
+                "bower-asset/speakingurl": "~9.0.0"
             },
             "type": "bower-asset",
             "license": [
@@ -234,6 +338,22 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bower-asset/speakingurl",
+            "version": "v9.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pid/speakingurl.git",
+                "reference": "013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pid/speakingurl/zipball/013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8",
+                "reference": "013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8",
+                "shasum": null
+            },
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/x-editable",
@@ -335,6 +455,47 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16T21:13:23+00:00"
+        },
+        {
+            "name": "codemix/yii2-localeurls",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codemix/yii2-localeurls.git",
+                "reference": "f681040b9da5b35a8653041f98bd58c2dd84af07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/f681040b9da5b35a8653041f98bd58c2dd84af07",
+                "reference": "f681040b9da5b35a8653041f98bd58c2dd84af07",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "codemix\\localeurls\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Härtl",
+                    "email": "haertl.mike@gmail.com"
+                }
+            ],
+            "description": "Automatic locale/language management for URLs.",
+            "keywords": [
+                "i18n",
+                "locale",
+                "yii2"
+            ],
+            "time": "2018-06-18T12:11:10+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -495,6 +656,48 @@
             "time": "2018-02-23T01:58:20+00:00"
         },
         {
+            "name": "himiklab/yii2-sitemap-module",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/himiklab/yii2-sitemap-module.git",
+                "reference": "a05c1b8393eda14a301acf63420ebcfcfbef9fbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/himiklab/yii2-sitemap-module/zipball/a05c1b8393eda14a301acf63420ebcfcfbef9fbe",
+                "reference": "a05c1b8393eda14a301acf63420ebcfcfbef9fbe",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "himiklab\\sitemap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HimikLab",
+                    "homepage": "https://github.com/himiklab"
+                }
+            ],
+            "description": "Yii2 module for automatically generation XML Sitemap",
+            "keywords": [
+                "Sitemap",
+                "module",
+                "xml",
+                "yii2"
+            ],
+            "time": "2017-11-08T11:12:17+00:00"
+        },
+        {
             "name": "himiklab/yii2-sortable-grid-view-widget",
             "version": "1.0.11",
             "source": {
@@ -648,6 +851,60 @@
             "time": "2018-09-22T07:37:15+00:00"
         },
         {
+            "name": "kartik-v/yii2-widget-datepicker",
+            "version": "v1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
+                "reference": "01a5940fb1b70b39b7916a4e68768f8626024ddc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/01a5940fb1b70b39b7916a4e68768f8626024ddc",
+                "reference": "01a5940fb1b70b39b7916a4e68768f8626024ddc",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "~1.9"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\date\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the bootstrap datepicker plugin (sub repo split from yii2-widgets).",
+            "homepage": "https://github.com/kartik-v/yii2-widget-datepicker",
+            "keywords": [
+                "date",
+                "extension",
+                "form",
+                "jquery",
+                "picker",
+                "plugin",
+                "select2",
+                "widget",
+                "yii2"
+            ],
+            "time": "2018-08-29T12:10:45+00:00"
+        },
+        {
             "name": "kartik-v/yii2-widget-growl",
             "version": "v1.1.1",
             "source": {
@@ -695,6 +952,59 @@
                 "yii2"
             ],
             "time": "2015-05-03T08:23:04+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-select2",
+            "version": "v2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-select2.git",
+                "reference": "f1ae98b7ec3e46ba0193471647ce15d07aa67f58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f1ae98b7ec3e46ba0193471647ce15d07aa67f58",
+                "reference": "f1ae98b7ec3e46ba0193471647ce15d07aa67f58",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": ">=1.9"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\select2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the Select2 jQuery plugin (sub repo split from yii2-widgets).",
+            "homepage": "https://github.com/kartik-v/yii2-widget-select2",
+            "keywords": [
+                "dropdown",
+                "extension",
+                "form",
+                "jquery",
+                "plugin",
+                "select2",
+                "widget",
+                "yii2"
+            ],
+            "time": "2018-09-07T08:11:16+00:00"
         },
         {
             "name": "mihaildev/yii2-ckeditor",
@@ -851,6 +1161,149 @@
             ],
             "description": "Yii2 WaveCMS",
             "time": "2018-09-25T11:46:20+00:00"
+        },
+        {
+            "name": "mrstroz/yii2-wavecms-metatags",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrstroz/yii2-wavecms-metatags.git",
+                "reference": "93dbe49717bdefa6209a7cc612a37437ad1e95b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-metatags/zipball/93dbe49717bdefa6209a7cc612a37437ad1e95b8",
+                "reference": "93dbe49717bdefa6209a7cc612a37437ad1e95b8",
+                "shasum": ""
+            },
+            "require": {
+                "mrstroz/yii2-wavecms": "*",
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-imagine": "~2.1.0"
+            },
+            "require-dev": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mrstroz\\wavecms\\metatags\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mrstroz\\wavecms\\metatags\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mariusz Stróż",
+                    "email": "mariusz.stroz@gmail.com",
+                    "homepage": "http://inwave.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Meta tags for WaveCMS",
+            "time": "2018-04-27T10:32:15+00:00"
+        },
+        {
+            "name": "mrstroz/yii2-wavecms-page",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrstroz/yii2-wavecms-page.git",
+                "reference": "5e933b9e6ffecead924f5eb2054ae76bc2130d09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-page/zipball/5e933b9e6ffecead924f5eb2054ae76bc2130d09",
+                "reference": "5e933b9e6ffecead924f5eb2054ae76bc2130d09",
+                "shasum": ""
+            },
+            "require": {
+                "2amigos/yii2-switch-widget": "~1.0",
+                "himiklab/yii2-sitemap-module": "*",
+                "kartik-v/yii2-widget-datepicker": "@dev",
+                "kartik-v/yii2-widget-select2": "@dev",
+                "mrstroz/yii2-wavecms": "*",
+                "mrstroz/yii2-wavecms-metatags": "*",
+                "php": ">=5.6.0",
+                "powerkernel/yii2-slugify": "*",
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-imagine": "~2.1.0"
+            },
+            "require-dev": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mrstroz\\wavecms\\page\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mrstroz\\wavecms\\page\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mariusz Stróż",
+                    "email": "mariusz.stroz@gmail.com",
+                    "homepage": "http://inwave.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Page module for WaveCMS",
+            "time": "2018-09-25T11:49:57+00:00"
+        },
+        {
+            "name": "powerkernel/yii2-slugify",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/powerkernel/yii2-slugify.git",
+                "reference": "80ed152d9695ec753a808761af25869d5ed5a5d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/powerkernel/yii2-slugify/zipball/80ed152d9695ec753a808761af25869d5ed5a5d2",
+                "reference": "80ed152d9695ec753a808761af25869d5ed5a5d2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-slugify": "~1.2.5",
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "powerkernel\\slugify\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "harry@powerkernel.com"
+                }
+            ],
+            "description": "Slugify extension for Yii2",
+            "keywords": [
+                "slugify",
+                "yii2"
+            ],
+            "time": "2017-12-14T05:30:14+00:00"
         },
         {
             "name": "studio-42/elfinder",
@@ -4038,7 +4491,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=7.1.0"
     },
     "platform-dev": []
 }

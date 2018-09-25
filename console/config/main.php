@@ -11,15 +11,32 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
+    'modules' => [
+        'wavecms' => [
+            'class' => 'mrstroz\wavecms\Module'
+        ],
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'controllerMap' => [
         'fixture' => [
             'class' => 'yii\console\controllers\FixtureController',
             'namespace' => 'common\fixtures',
-          ],
+        ],
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => [
+                '@app/migrations',
+                '@yii/rbac/migrations/',
+                '@yii/i18n/migrations/',
+                '@vendor/mrstroz/yii2-wavecms/migrations/',
+                '@vendor/yii2mod/yii2-settings/migrations/',
+                '@vendor/mrstroz/yii2-wavecms-page/migrations',
+                '@vendor/mrstroz/yii2-wavecms-metatags/migrations'
+            ],
+        ],
     ],
     'components' => [
         'log' => [
