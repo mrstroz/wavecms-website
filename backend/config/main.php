@@ -8,10 +8,12 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
-    'language' => 'en',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        'backend\Bootstrap'
+    ],
     'modules' => [
         'wavecms' => [
             'class' => 'mrstroz\wavecms\Module',
@@ -64,6 +66,7 @@ return [
                 'baseUrl' => '@web/themes/admin',
                 'pathMap' => [
                     '@wavecms/views' => '@app/themes/admin/wavecms',
+                    '@wavecms_page/views' => '@app/themes/admin/wavecms-page',
                 ],
             ],
         ],

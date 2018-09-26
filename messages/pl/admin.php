@@ -17,5 +17,9 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'WaveCMS websites' => '',
+    'Blank' => 'Pusta',
+    'Contact' => 'Kontakt',
+    'Image left' => 'Obraz po lewej',
+    'Image right' => 'Obraz po prawej',
+    'News' => 'Aktualności',
 ];

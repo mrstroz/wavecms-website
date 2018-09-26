@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a394cdb3114b6c8233fcf2f5ea68c36",
+    "content-hash": "e41e65ecfa14dd3a546d102db89ba9d4",
     "packages": [
         {
             "name": "2amigos/yii2-editable-widget",
@@ -129,23 +129,20 @@
         },
         {
             "name": "2amigos/yii2-translateable-behavior",
-            "version": "1.0.4",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/2amigos/yii2-translateable-behavior.git",
-                "reference": "2e759b792b1d7a9dd98225546d50708d839e82ff"
+                "reference": "d614702444369fa13a65619167ba31aaeb05b6d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/2amigos/yii2-translateable-behavior/zipball/2e759b792b1d7a9dd98225546d50708d839e82ff",
-                "reference": "2e759b792b1d7a9dd98225546d50708d839e82ff",
+                "url": "https://api.github.com/repos/2amigos/yii2-translateable-behavior/zipball/d614702444369fa13a65619167ba31aaeb05b6d7",
+                "reference": "d614702444369fa13a65619167ba31aaeb05b6d7",
                 "shasum": ""
             },
             "require": {
                 "yiisoft/yii2": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.5"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -171,7 +168,7 @@
                 "translation",
                 "yii"
             ],
-            "time": "2018-07-03T20:27:34+00:00"
+            "time": "2017-08-25T14:44:06+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -553,16 +550,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3"
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/54859fabea8b3beecbb1a282888d5c990036b9e3",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0578b32b30b22de3e8664f797cf846fc9246f786",
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +603,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-08-16T20:49:45+00:00"
+            "time": "2018-09-25T20:47:26+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -801,16 +798,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.9.6",
+            "version": "v1.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "fe4324fca887e3219afb71ee394d6880ccc1812a"
+                "reference": "69e4f7fb2cb215d85b6e66ef9a9a398939d4de06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/fe4324fca887e3219afb71ee394d6880ccc1812a",
-                "reference": "fe4324fca887e3219afb71ee394d6880ccc1812a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/69e4f7fb2cb215d85b6e66ef9a9a398939d4de06",
+                "reference": "69e4f7fb2cb215d85b6e66ef9a9a398939d4de06",
                 "shasum": ""
             },
             "require": {
@@ -848,7 +845,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2018-09-22T07:37:15+00:00"
+            "time": "2018-09-26T10:46:07+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
@@ -1114,17 +1111,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrstroz/yii2-wavecms.git",
-                "reference": "56b6fa989175d7d88e1f123655e3028d3c55bb5e"
+                "reference": "4e8ad2dc5cd74cc0ba5cac22c46963ab346df775"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms/zipball/56b6fa989175d7d88e1f123655e3028d3c55bb5e",
-                "reference": "56b6fa989175d7d88e1f123655e3028d3c55bb5e",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms/zipball/4e8ad2dc5cd74cc0ba5cac22c46963ab346df775",
+                "reference": "4e8ad2dc5cd74cc0ba5cac22c46963ab346df775",
                 "shasum": ""
             },
             "require": {
                 "2amigos/yii2-editable-widget": "~1.0",
-                "2amigos/yii2-translateable-behavior": "@dev",
+                "2amigos/yii2-translateable-behavior": "0.1.3",
                 "himiklab/yii2-sortable-grid-view-widget": "*",
                 "kartik-v/yii2-widget-growl": "*",
                 "mihaildev/yii2-ckeditor": "*",
@@ -1160,7 +1157,7 @@
                 }
             ],
             "description": "Yii2 WaveCMS",
-            "time": "2018-09-25T11:46:20+00:00"
+            "time": "2018-09-26T13:41:08+00:00"
         },
         {
             "name": "mrstroz/yii2-wavecms-metatags",
@@ -1212,16 +1209,16 @@
         },
         {
             "name": "mrstroz/yii2-wavecms-page",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrstroz/yii2-wavecms-page.git",
-                "reference": "5e933b9e6ffecead924f5eb2054ae76bc2130d09"
+                "reference": "3bc042e8e6ee74f7a6c975dd404ecd171978939f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-page/zipball/5e933b9e6ffecead924f5eb2054ae76bc2130d09",
-                "reference": "5e933b9e6ffecead924f5eb2054ae76bc2130d09",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-page/zipball/3bc042e8e6ee74f7a6c975dd404ecd171978939f",
+                "reference": "3bc042e8e6ee74f7a6c975dd404ecd171978939f",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1259,7 @@
                 }
             ],
             "description": "Page module for WaveCMS",
-            "time": "2018-09-25T11:49:57+00:00"
+            "time": "2018-09-26T20:07:23+00:00"
         },
         {
             "name": "powerkernel/yii2-slugify",
