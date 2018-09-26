@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e41e65ecfa14dd3a546d102db89ba9d4",
+    "content-hash": "1ab6effa710383409e89c4e7b21b46fd",
     "packages": [
         {
             "name": "2amigos/yii2-editable-widget",
@@ -1208,17 +1208,70 @@
             "time": "2018-04-27T10:32:15+00:00"
         },
         {
+            "name": "mrstroz/yii2-wavecms-news",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrstroz/yii2-wavecms-news.git",
+                "reference": "21c55490c5d7280819f82e88c3a502460b0c234c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-news/zipball/21c55490c5d7280819f82e88c3a502460b0c234c",
+                "reference": "21c55490c5d7280819f82e88c3a502460b0c234c",
+                "shasum": ""
+            },
+            "require": {
+                "2amigos/yii2-switch-widget": "~1.0",
+                "himiklab/yii2-sitemap-module": "*",
+                "kartik-v/yii2-widget-datepicker": "@dev",
+                "mrstroz/yii2-wavecms": "*",
+                "mrstroz/yii2-wavecms-metatags": "*",
+                "php": ">=5.6.0",
+                "powerkernel/yii2-slugify": "*",
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-imagine": "~2.1.0"
+            },
+            "require-dev": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mrstroz\\wavecms\\news\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mrstroz\\wavecms\\news\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mariusz Stróż",
+                    "email": "mariusz.stroz@gmail.com",
+                    "homepage": "http://inwave.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "News module for WaveCMS",
+            "time": "2018-07-17T12:10:22+00:00"
+        },
+        {
             "name": "mrstroz/yii2-wavecms-page",
             "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrstroz/yii2-wavecms-page.git",
-                "reference": "3bc042e8e6ee74f7a6c975dd404ecd171978939f"
+                "reference": "efd14e18fd20916eb49f2866b6040f83a474e843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-page/zipball/3bc042e8e6ee74f7a6c975dd404ecd171978939f",
-                "reference": "3bc042e8e6ee74f7a6c975dd404ecd171978939f",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-page/zipball/efd14e18fd20916eb49f2866b6040f83a474e843",
+                "reference": "efd14e18fd20916eb49f2866b6040f83a474e843",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1312,7 @@
                 }
             ],
             "description": "Page module for WaveCMS",
-            "time": "2018-09-26T20:07:23+00:00"
+            "time": "2018-09-26T21:08:45+00:00"
         },
         {
             "name": "powerkernel/yii2-slugify",

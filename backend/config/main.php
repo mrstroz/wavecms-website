@@ -34,6 +34,15 @@ return [
             ]
             */
         ],
+        'wavecms-news' => [
+            'class' => 'mrstroz\wavecms\news\Module',
+            /*
+             * Override classes
+            'classMap' => [
+                'News' => 'common\models\News',
+            ]
+            */
+        ],
     ],
     'components' => [
         'request' => [

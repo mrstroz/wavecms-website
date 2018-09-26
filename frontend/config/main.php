@@ -20,6 +20,7 @@ return [
             'class' => 'himiklab\sitemap\Sitemap',
             'models' => [
                 'mrstroz\wavecms\page\models\Page',
+                'mrstroz\wavecms\news\models\News',
             ],
             'urls' => [
                 [

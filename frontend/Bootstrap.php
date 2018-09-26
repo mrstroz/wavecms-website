@@ -19,11 +19,19 @@ class Bootstrap implements BootstrapInterface
     {
         Yii::$app->urlManager->parseRequest(Yii::$app->request);
         $modelPage = Yii::createObject(Page::class);
-        $pages = $modelPage::find()->select(['link'])->byAllCriteria()->byType(['text'])->column();
 
+        $pages = $modelPage::find()->select(['link'])->andWhere(['<>', 'template', 'news'])->byAllCriteria()->byType(['text'])->column();
         if ($pages) {
             Yii::$app->getUrlManager()->addRules([
                 '<link:(' . implode('|', $pages) . ')>' => 'site/page'
+            ]);
+        }
+
+        $news = $modelPage::find()->select(['link'])->andWhere(['=', 'template', 'news'])->byAllCriteria()->byType(['text'])->column();
+        if ($news) {
+            Yii::$app->getUrlManager()->addRules([
+                '<link:(' . implode('|', $news) . ')>' => 'site/news',
+                '<link:(' . implode('|', $news) . ')>/<news_link>' => 'site/news-detail'
             ]);
         }
 

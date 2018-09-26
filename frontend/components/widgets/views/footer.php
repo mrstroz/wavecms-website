@@ -1,6 +1,7 @@
 <?php
 
 use mrstroz\wavecms\page\components\helpers\Front;
+use mrstroz\wavecms\page\models\PageSettings;
 
 /** @var \mrstroz\wavecms\page\models\Menu[] $menu */
 
@@ -22,7 +23,7 @@ use mrstroz\wavecms\page\components\helpers\Front;
                     </ul>
                 </div>
                 <div class="col-lg-12">
-                    <p>Copyright</p>
+                    <?= PageSettings::get('footer_copyright',true); ?>
                 </div>
             </div>
 
