@@ -21,14 +21,14 @@ composer create-project --prefer-dist mrstroz/wavecms-website website-name
 php init
 ```
 
-2. Add database credentials to `common\config\main-local.php`
+3. Add database credentials to `common\config\main-local.php`
 
-3. Apply migrations
+4. Apply migrations
 ```
 yii migrate
 ```
 
-4. Add CMS user 
+5. Add CMS user 
 ```
 yii wavecms/create [email] [password]
 ```
