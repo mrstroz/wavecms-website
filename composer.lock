@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ab6effa710383409e89c4e7b21b46fd",
+    "content-hash": "10c1dbffc5d933861a373a3fa07b68a5",
     "packages": [
         {
             "name": "2amigos/yii2-editable-widget",
@@ -653,6 +653,50 @@
             "time": "2018-02-23T01:58:20+00:00"
         },
         {
+            "name": "himiklab/yii2-recaptcha-widget",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/himiklab/yii2-recaptcha-widget.git",
+                "reference": "cc8a023bf51db3b40f1b8532cd94fc00c532edf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/himiklab/yii2-recaptcha-widget/zipball/cc8a023bf51db3b40f1b8532cd94fc00c532edf5",
+                "reference": "cc8a023bf51db3b40f1b8532cd94fc00c532edf5",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.11",
+                "yiisoft/yii2-httpclient": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "himiklab\\yii2\\recaptcha\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HimikLab",
+                    "homepage": "https://github.com/himiklab/"
+                }
+            ],
+            "description": "Yii2 Google reCAPTCHA widget",
+            "keywords": [
+                "captcha",
+                "google",
+                "recaptcha",
+                "widget",
+                "yii2"
+            ],
+            "time": "2018-07-03T13:34:52+00:00"
+        },
+        {
             "name": "himiklab/yii2-sitemap-module",
             "version": "1.2.0",
             "source": {
@@ -798,16 +842,16 @@
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "v1.9.7",
+            "version": "v1.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "69e4f7fb2cb215d85b6e66ef9a9a398939d4de06"
+                "reference": "3ed7366a3a85f80e5dde158906ac72de7d804710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/69e4f7fb2cb215d85b6e66ef9a9a398939d4de06",
-                "reference": "69e4f7fb2cb215d85b6e66ef9a9a398939d4de06",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/3ed7366a3a85f80e5dde158906ac72de7d804710",
+                "reference": "3ed7366a3a85f80e5dde158906ac72de7d804710",
                 "shasum": ""
             },
             "require": {
@@ -845,7 +889,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2018-09-26T10:46:07+00:00"
+            "time": "2018-09-27T03:29:34+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
@@ -1107,16 +1151,16 @@
         },
         {
             "name": "mrstroz/yii2-wavecms",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrstroz/yii2-wavecms.git",
-                "reference": "4e8ad2dc5cd74cc0ba5cac22c46963ab346df775"
+                "reference": "8280c3c80eb184b6f5b8cc126f83c6c502419a35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms/zipball/4e8ad2dc5cd74cc0ba5cac22c46963ab346df775",
-                "reference": "4e8ad2dc5cd74cc0ba5cac22c46963ab346df775",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms/zipball/8280c3c80eb184b6f5b8cc126f83c6c502419a35",
+                "reference": "8280c3c80eb184b6f5b8cc126f83c6c502419a35",
                 "shasum": ""
             },
             "require": {
@@ -1157,7 +1201,59 @@
                 }
             ],
             "description": "Yii2 WaveCMS",
-            "time": "2018-09-26T13:41:08+00:00"
+            "time": "2018-09-28T08:50:13+00:00"
+        },
+        {
+            "name": "mrstroz/yii2-wavecms-form",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrstroz/yii2-wavecms-form.git",
+                "reference": "9946ec49491d4cc9257564da7d8e6ffb859243ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrstroz/yii2-wavecms-form/zipball/9946ec49491d4cc9257564da7d8e6ffb859243ae",
+                "reference": "9946ec49491d4cc9257564da7d8e6ffb859243ae",
+                "shasum": ""
+            },
+            "require": {
+                "2amigos/yii2-switch-widget": "~1.0",
+                "himiklab/yii2-recaptcha-widget": "*",
+                "mihaildev/yii2-ckeditor": "*",
+                "mihaildev/yii2-elfinder": "*",
+                "mrstroz/yii2-wavecms": ">=0.2.6",
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.6",
+                "yiisoft/yii2-imagine": "~2.1.0"
+            },
+            "require-dev": {
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mrstroz\\wavecms\\form\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mrstroz\\wavecms\\form\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mariusz Stróż",
+                    "email": "mariusz.stroz@gmail.com",
+                    "homepage": "http://inwave.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Form module for WaveCMS",
+            "time": "2018-09-28T08:54:20+00:00"
         },
         {
             "name": "mrstroz/yii2-wavecms-metatags",
@@ -1829,6 +1925,53 @@
                 "yii2"
             ],
             "time": "2018-07-05T15:44:47+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "360b0f9c0855709b3370d486a4de435022fb3926"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/360b0f9c0855709b3370d486a4de435022fb3926",
+                "reference": "360b0f9c0855709b3370d486a4de435022fb3926",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "time": "2018-09-23T21:53:35+00:00"
         },
         {
             "name": "yiisoft/yii2-imagine",

@@ -43,6 +43,15 @@ return [
             ]
             */
         ],
+        'wavecms-form' => [
+            'class' => 'mrstroz\wavecms\form\Module',
+            /*
+            * Override classes
+            'classMap' => [
+                'Form' => 'common\models\Form',
+            ]
+            */
+        ],
     ],
     'components' => [
         'request' => [

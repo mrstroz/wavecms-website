@@ -20,7 +20,10 @@ class Bootstrap implements BootstrapInterface
         Yii::$app->urlManager->parseRequest(Yii::$app->request);
         $modelPage = Yii::createObject(Page::class);
 
-        $pages = $modelPage::find()->select(['link'])->andWhere(['<>', 'template', 'news'])->byAllCriteria()->byType(['text'])->column();
+        $pages = $modelPage::find()->select(['link'])
+            ->andWhere(['<>', 'template', 'news'])
+            ->andWhere(['<>', 'template', 'contact'])
+            ->byAllCriteria()->byType(['text'])->column();
         if ($pages) {
             Yii::$app->getUrlManager()->addRules([
                 '<link:(' . implode('|', $pages) . ')>' => 'site/page'
@@ -32,6 +35,13 @@ class Bootstrap implements BootstrapInterface
             Yii::$app->getUrlManager()->addRules([
                 '<link:(' . implode('|', $news) . ')>' => 'site/news',
                 '<link:(' . implode('|', $news) . ')>/<news_link>' => 'site/news-detail'
+            ]);
+        }
+
+        $contact = $modelPage::find()->select(['link'])->andWhere(['=', 'template', 'contact'])->byAllCriteria()->byType(['text'])->column();
+        if ($contact) {
+            Yii::$app->getUrlManager()->addRules([
+                '<link:(' . implode('|', $contact) . ')>' => 'site/contact',
             ]);
         }
 

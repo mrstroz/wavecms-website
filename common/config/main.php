@@ -12,6 +12,12 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
         ],
+        'reCaptcha' => [
+            'name' => 'reCaptcha',
+            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'siteKey' => 'your siteKey',
+            'secret' => 'your secret key',
+        ],
         'i18n' => [
             'translations' => [
                 'admin*' => [

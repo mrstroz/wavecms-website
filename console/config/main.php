@@ -36,6 +36,7 @@ return [
                 '@vendor/mrstroz/yii2-wavecms-page/migrations',
                 '@vendor/mrstroz/yii2-wavecms-metatags/migrations',
                 '@vendor/mrstroz/yii2-wavecms-news/migrations',
+                '@vendor/mrstroz/yii2-wavecms-form/migrations'
             ],
         ],
     ],

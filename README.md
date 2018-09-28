@@ -1,7 +1,7 @@
 WaveCMS Website
 ===============
 
-WaveCMS is a website template based on [Yii 2 Advanced Project Template](https://github.com/yiisoft/yii2-app-advanced)
+**WaveCMS Website** is a website template based on [Yii 2 Advanced Project Template](https://github.com/yiisoft/yii2-app-advanced) and [WaveCMS](https://github.com/mrstroz/yii2-wavecms)
 
 The template includes three tiers: front end, back end, and console, each of which
 is a separate Yii application.
@@ -27,10 +27,13 @@ yii migrate
 yii wavecms/create [email] [password]
 ```
 
-##Used extensions
+## Used extensions
 Read extensions docs to more get more info about usage.
 1. [WaveCMS](https://github.com/mrstroz/yii2-wavecms)
 2. [WaveCMS Page](https://github.com/mrstroz/yii2-wavecms-page)
 3. [WaveCMS News](https://github.com/mrstroz/yii2-wavecms-news)
 4. [WaveCMS Form](https://github.com/mrstroz/yii2-wavecms-form)
 
+> ![INWAVE LOGO](http://inwave.pl/html/img/logo.png)  
+> INWAVE - Internet Software House  
+> [inwave.eu](http://inwave.eu/)
