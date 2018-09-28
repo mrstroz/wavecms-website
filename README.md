@@ -16,13 +16,19 @@ deploying the application in different environments.
 composer create-project --prefer-dist mrstroz/wavecms-website website-name
 ```
 
-2. Init project and apply migrations
+2. Init project
 ```
 php init
+```
+
+2. Add database credentials to `common\config\main-local.php`
+
+3. Apply migrations
+```
 yii migrate
 ```
 
-3. Add CMS user 
+4. Add CMS user 
 ```
 yii wavecms/create [email] [password]
 ```
