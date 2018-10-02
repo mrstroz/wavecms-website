@@ -6,7 +6,7 @@ use mrstroz\wavecms\form\models\Form;
 use mrstroz\wavecms\form\models\FormSettings;
 use mrstroz\wavecms\metatags\components\helpers\MetaTags;
 use mrstroz\wavecms\news\models\News;
-use mrstroz\wavecms\page\models\Page;
+use common\models\page\Page;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;

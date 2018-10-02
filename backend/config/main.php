@@ -27,12 +27,13 @@ return [
         ],
         'wavecms-page' => [
             'class' => 'mrstroz\wavecms\page\Module',
-            /*
-             * Override classes
             'classMap' => [
-                'Page' => 'common\models\Page',
+                'Page' => 'common\models\page\Page',
+                'PageLang' => 'common\models\page\PageLang',
+                'PageItem' => 'common\models\page\PageItem',
+                'PageItemLang' => 'common\models\page\PageItemLang',
+                'PageSettings' => 'common\models\page\PageSettings',
             ]
-            */
         ],
         'wavecms-news' => [
             'class' => 'mrstroz\wavecms\news\Module',
