@@ -1,8 +1,9 @@
 <?php
 
 use mrstroz\wavecms\page\components\helpers\Front;
+use mrstroz\wavecms\page\models\PageItem;
 
-/** @var \mrstroz\wavecms\page\models\PageItem[] $grid */
+/** @var PageItem[] $grid */
 
 ?>
 
@@ -17,6 +18,7 @@ use mrstroz\wavecms\page\components\helpers\Front;
 
                 <p>
                     <?= Front::link($item, $item->link_title, ['class' => 'btn btn-default'], [
+                        'rel' => 'link_rel',
                         'page_id' => 'link_page_id',
                         'page_url' => 'link_page_url',
                         'page_blank' => 'link_page_blank'

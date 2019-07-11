@@ -1,13 +1,16 @@
 <?php
 
-/** @var $this yii\web\View */
-
+use mrstroz\wavecms\news\models\News;
+use mrstroz\wavecms\page\models\Page;
+use yii\data\ActiveDataProvider;
 use yii\helpers\Url;
 use mrstroz\wavecms\page\components\helpers\Front;
+use yii\web\View;
 use yii\widgets\LinkPager;
 
-/** @var \mrstroz\wavecms\page\models\Page $page */
-/** @var \yii\data\ActiveDataProvider $dataProvider */
+/** @var View $this */
+/** @var Page $page */
+/** @var ActiveDataProvider $dataProvider */
 
 ?>
 
@@ -20,7 +23,7 @@ use yii\widgets\LinkPager;
 </div>
 
 <div class="row">
-    <?php /** @var \mrstroz\wavecms\news\models\News $news */
+    <?php /** @var News $news */
     foreach ($dataProvider->getModels() as $news): ?>
         <div class="col-md-3">
             <?php $url = Url::to([$page->link . '/' . $news->link]); ?>

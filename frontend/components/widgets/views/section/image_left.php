@@ -1,8 +1,9 @@
 <?php
 
 use mrstroz\wavecms\page\components\helpers\Front;
+use mrstroz\wavecms\page\models\PageItem;
 
-/** @var \mrstroz\wavecms\page\models\PageItem $item */
+/** @var PageItem $item */
 
 ?>
 

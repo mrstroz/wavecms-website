@@ -12,10 +12,10 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "codemix/yii2-localeurls": "^1.7",
-        "mrstroz/yii2-wavecms": "~0.2.6",
-        "mrstroz/yii2-wavecms-page": "~0.3.1",
-        "mrstroz/yii2-wavecms-news": "*",
-        "mrstroz/yii2-wavecms-form": "~0.2.1"
+        "mrstroz/yii2-wavecms": "~0.2.11",
+        "mrstroz/yii2-wavecms-page": "^0.4.5",
+        "mrstroz/yii2-wavecms-news": "^0.4.5",
+        "mrstroz/yii2-wavecms-form": "^0.2.2"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this \yii\web\View */
+/* @var $this View */
 
 /* @var $content string */
 
@@ -8,6 +8,7 @@ use frontend\components\widgets\Header;
 use frontend\components\widgets\Footer;
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
+use yii\web\View;
 
 AppAsset::register($this);
 ?>

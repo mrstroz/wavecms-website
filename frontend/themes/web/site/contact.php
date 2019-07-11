@@ -1,15 +1,18 @@
 <?php
 
-/* @var $this yii\web\View */
-
-/** @var \mrstroz\wavecms\form\models\Form $model */
-
-/** @var \mrstroz\wavecms\page\models\Page $page */
 
 use himiklab\yii2\recaptcha\ReCaptcha;
+use mrstroz\wavecms\form\models\FormSettings;
+use mrstroz\wavecms\page\models\Page;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\web\View;
 use yii\widgets\Pjax;
+use mrstroz\wavecms\form\models\Form;
+
+/** @var View $this */
+/** @var Form $model */
+/** @var Page $page */
 
 ?>
 
@@ -24,7 +27,7 @@ use yii\widgets\Pjax;
 <?php
 
 Pjax::begin();
-/** @var \mrstroz\wavecms\form\models\FormSettings $formSettings */
+/** @var FormSettings $formSettings */
 if ($formSettings) {
     echo $formSettings->thanks_text;
 } else {

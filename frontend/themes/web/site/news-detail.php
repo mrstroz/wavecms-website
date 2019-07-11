@@ -1,9 +1,13 @@
 <?php
 
-/** @var $this yii\web\View */
+use mrstroz\wavecms\news\models\News;
+use mrstroz\wavecms\page\models\Page;
+use yii\web\View;
 
-/** @var \mrstroz\wavecms\page\models\Page $page */
-/** @var \mrstroz\wavecms\news\models\News $news */
+/** @var  View $this */
+/** @var Page $page */
+/** @var News $news */
+
 
 ?>
 

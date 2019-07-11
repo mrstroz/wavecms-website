@@ -1,11 +1,12 @@
 <?php
 
 use mrstroz\wavecms\page\components\helpers\Front;
+use mrstroz\wavecms\page\models\Menu;
 use yii\helpers\Url;
 use yii\helpers\Html;
 use frontend\components\helpers\T;
 
-/** @var \mrstroz\wavecms\page\models\Menu[] $menu */
+/** @var Menu[] $menu */
 
 ?>
 

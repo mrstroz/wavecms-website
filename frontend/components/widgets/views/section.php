@@ -1,7 +1,10 @@
 <?php
 
-/** @var \mrstroz\wavecms\page\models\PageItem[] $section */
-/** @var \yii\web\View $this */
+use mrstroz\wavecms\page\models\PageItem;
+use yii\web\View;
+
+/** @var View $this */
+/** @var PageItem[] $section */
 
 ?>
 

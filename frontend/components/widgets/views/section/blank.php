@@ -1,6 +1,8 @@
 <?php
 
-/** @var \mrstroz\wavecms\page\models\PageItem $item */
+use mrstroz\wavecms\page\models\PageItem;
+
+/** @var PageItem $item */
 
 ?>
 

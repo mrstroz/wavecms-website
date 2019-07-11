@@ -3,9 +3,10 @@
 use frontend\components\widgets\Grid;
 use frontend\components\widgets\Slider;
 use frontend\components\widgets\Section;
+use mrstroz\wavecms\page\models\Page;
 
-/* @var $this yii\web\View */
-/** @var \mrstroz\wavecms\page\models\Page $page */
+/* @var yii\web\View $this */
+/** @var Page $page */
 
 ?>
 

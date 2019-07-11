@@ -1,8 +1,9 @@
 <?php
 
 use mrstroz\wavecms\page\components\helpers\Front;
+use mrstroz\wavecms\page\models\PageItem;
 
-/** @var \mrstroz\wavecms\page\models\PageItem[] $slider */
+/** @var PageItem[] $slider */
 
 ?>
 
@@ -13,7 +14,8 @@ use mrstroz\wavecms\page\components\helpers\Front;
         <ol class="carousel-indicators">
             <?php $i = 0; ?>
             <?php foreach ($slider as $item): ?>
-                <li data-target="#myCarousel" data-slide-to="<?= $i; ?>"<?php if ($i === 0): ?> class="active"<?php endif; ?>></li>
+                <li data-target="#myCarousel"
+                    data-slide-to="<?= $i; ?>"<?php if ($i === 0): ?> class="active"<?php endif; ?>></li>
                 <?php $i++; ?>
             <?php endforeach; ?>
         </ol>
